@@ -2,10 +2,17 @@ import NavBar from "@/components/NavBar";
 import DataRow from "./DataRow";
 
 async function getRefeicao(){
-  const url = "http://localhost:8080/api/refeicao"
-  const resp = await fetch(url, { next: { revalidate: 0 } })
-  if (!resp.ok) throw new Error("Não pode carregar os dados")
-  return resp.json()
+  const url = "http://localhost:8080/api/refeicao";
+  try {
+    const resp = await fetch(url, { method: 'GET' });
+    if (!resp.ok) {
+      throw new Error(`Não pode carregar os dados. Status: ${resp.status}`);
+    }
+    return resp.json();
+  } catch (error) {
+    console.error("Erro ao buscar os dados:", error);
+    throw error;
+  }
 }
 
 export default async function Home() {

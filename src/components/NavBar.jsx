@@ -25,10 +25,6 @@ export default function NavBar({active}) {
                     </Link>
                 </li>
             </ul>
-
-            {/* <div className="h-12 w-12 rounded-full overflow-hidden">
-                <img src="https://i.pravatar.cc/100" alt="avatar do usuário" />
-            </div> */}
         </nav>
     )
 }
