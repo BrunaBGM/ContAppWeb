@@ -6,11 +6,11 @@ import ListaAlimentos from "./ListaAlimentos";
 const Refeicao = ({ refeicao, alimentos }) => {
 
   const [alimentosSelecionados, setAlimentosSelecionados] = useState([]);
-  const [mostrarLista, setMostrarLista] = useState(false); // Defina mostrarLista como um estado
+  const [mostrarLista, setMostrarLista] = useState(false); 
 
   const adicionarAlimentoSelecionado = (alimento) => {
     setAlimentosSelecionados([...alimentosSelecionados, alimento]);
-    fecharModal(); // Fechar o modal após selecionar um alimento
+    fecharModal();
   };
 
   const abrirModal = () => {

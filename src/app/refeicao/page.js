@@ -25,7 +25,7 @@ export default async function Home() {
       <main className="bg-slate-900 m-20 p-12 rounded-xl">
         <h2 className="text-2xl font-bold">Refeicoes</h2>
 
-        <div id="data" className="text-slate-300 m-1">
+        <div className="text-slate-300 m-1">
           {data.map(refeicao => <DataRow refeicao={refeicao} /> )}
         </div>
       </main>

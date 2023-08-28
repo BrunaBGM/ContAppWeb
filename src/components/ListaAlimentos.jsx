@@ -1,9 +1,9 @@
 import React from 'react';
-import Botao from './Botao'; // Importe o componente Botao
+import Botao from './Botao';
 
 const ListaAlimentos = ({ onAlimentoSelecionado, onClose }) => {
   const handleClick = (alimento) => {
-    // Chama a função para adicionar o alimento selecionado
+ 
     onAlimentoSelecionado(alimento);
   };
 
@@ -11,7 +11,7 @@ const ListaAlimentos = ({ onAlimentoSelecionado, onClose }) => {
     { nome: 'Arroz', calorias: 150 },
     { nome: 'Feijão', calorias: 120 },
     { nome: 'Frango Grelhado', calorias: 200 },
-    // Adicione mais alimentos conforme necessário
+
   ];
 
   return (

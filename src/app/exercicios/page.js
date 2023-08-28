@@ -6,7 +6,7 @@ export default function Exercicio() {
       <Navbar active={"exercicios"} />
 
       <main className='bg-black p-12 rounded-x1'>
-        <h2>Diario</h2>
+        <h2>Exercicios</h2>
       </main>
     </>
   )

@@ -16,7 +16,7 @@ const Diario = () => {
       alimentos: [
         { nome: 'Ovo', quantidade: 1, calorias: 70 },
         { nome: 'Pão', quantidade: 1, calorias: 100 },
-        // ... outros alimentos
+
       ],
     },
     {
@@ -24,7 +24,7 @@ const Diario = () => {
       alimentos: [
         { nome: 'Ovo', quantidade: 1, calorias: 70 },
         { nome: 'Pão', quantidade: 1, calorias: 100 },
-        // ... outros alimentos
+
       ],
     },
     {
@@ -32,10 +32,10 @@ const Diario = () => {
       alimentos: [
         { nome: 'Ovo', quantidade: 1, calorias: 70 },
         { nome: 'Pão', quantidade: 1, calorias: 100 },
-        // ... outros alimentos
+ 
       ],
     },
-    // ... outras refeições
+
   ];
 
   return (
