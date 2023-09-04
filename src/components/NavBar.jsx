@@ -24,6 +24,11 @@ export default function NavBar({active}) {
                         exercicios
                     </Link>
                 </li>
+                <li>
+                    <Link className={active=="cadastro" && "text-slate-100"} href="/cadastro">
+                        cadastro
+                    </Link>
+                </li>
             </ul>
         </nav>
     )
