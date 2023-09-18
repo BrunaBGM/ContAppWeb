@@ -2,7 +2,7 @@
 
 import { revalidatePath } from "next/cache"
 
-const url = process.env.NEXT_PUBLIC_BASE_URL + "/cadatro"
+const url = process.env.NEXT_PUBLIC_BASE_URL + "/cadastro"
 
 export async function create(formData) {
     const options = {
