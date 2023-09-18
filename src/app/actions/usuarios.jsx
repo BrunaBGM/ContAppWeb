@@ -2,9 +2,9 @@
 
 import { revalidatePath } from "next/cache"
 
-export async function create(formData) {
-    const url = "http://localhost:8080/api/cadastro"
+const url = process.env.NEXT_PUBLIC_BASE_URL + "/cadatro"
 
+export async function create(formData) {
     const options = {
         method: "POST",
         body: JSON.stringify(Object.fromEntries(formData)),
@@ -23,3 +23,9 @@ export async function create(formData) {
     return {ok: "success"}
     
 }
+
+export async function getUsuario(){
+    const resp = await fetch(url, { next: { revalidate: 3600 } })
+    if (!resp.ok) throw new Error("Não pode carregar os dados")
+    return resp.json()
+  }

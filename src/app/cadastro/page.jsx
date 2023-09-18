@@ -1,7 +1,7 @@
 "use client"
 
 import { create } from "@/actions/cadastro";
-import Button from "@/components/Button";
+import Botao from "@/components/Botao";
 import InputText from "@/components/InputText";
 import NavBar from "@/components/NavBar";
 import { CheckIcon, ArrowLeftIcon } from "@heroicons/react/24/outline";
@@ -31,12 +31,12 @@ export default function FormUsuario() {
                     <InputText name="nome" id="nome" label="nome" />
                     <InputText name="email" id="email" label="email" />
                     <div className="flex justify-around mt-4">
-                        <Button href="#" variant="secundary" icon={<ArrowLeftIcon className="h-6 w-6" />}>
+                        <Botao href="#" variant="secundary" icon={<ArrowLeftIcon className="h-6 w-6" />}>
                             cancelar
-                        </Button>
-                        <Button element="button" icon={<CheckIcon className="h-6 w-6" />}>
+                        </Botao>
+                        <Botao element="button" icon={<CheckIcon className="h-6 w-6" />}>
                             salvar
-                        </Button>
+                        </Botao>
                     </div>  
                 </form>
                 <p>{message}</p>
