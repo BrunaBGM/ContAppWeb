@@ -1,7 +1,7 @@
 import NavBar from "@/components/NavBar";
 import DataRow from "../refeicao/DataRow";
 import Botao from "@/components/Botao";
-// import { getUsuario } from "../actions/usuarios";
+import { getUsuario } from "../actions/usuarios";
 
 export default async function Home() {
   const data = await getUsuario()
