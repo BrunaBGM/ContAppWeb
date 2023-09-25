@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { ChevronDown } from 'lucide-react';
-import { destroy } from '@/actions/contas';
+import { destroy } from '@/actions/refeicoes';
 import toast from 'react-hot-toast';
 
 import {
@@ -34,16 +34,16 @@ export default function DropMenu() {
   };
 
   const handleDelete = async () => {
-    const resp = await destroy(conta.id)
+    const resp = await destroy(refeicao.id)
     if (resp?.error) {
       toast.error(resp.error, { style: { background: '#333', color: '#FFF' } })
       return
     }
-    toast.success("conta apagada com sucesso", { style: { background: '#333', color: '#FFF' } })
+    toast.success("refeiçao apagada com sucesso", { style: { background: '#333', color: '#FFF' } })
   }
 
   const handleEdit = () => {
-    push(`/contas/${conta.id}/edit`)
+    push(`/refeicao/${refeicao.id}/edit`)
   }
 
 
